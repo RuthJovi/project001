@@ -1,0 +1,114 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: whitesmoke;
+    border:1px solid black;
+}
+
+.header{
+    background-color:cadetblue;
+    padding: 20px;
+    margin-left:20px;
+    margin-top:20px;
+    color: black;
+    font-size:xx-large;
+}
+
+
+.flex{
+    display:flex
+}
+
+h3{
+    margin-left:20px;
+}
+
+.card{
+    margin-left:0px;
+    font-size:medium;
+    padding:0px;
+    background-color:aliceblue;
+    border:1px solid black;
+    width: 15%;
+}
+
+.card:hover{
+    background-color: rgb(237, 228, 63);
+}
+
+.temp{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:x-large;
+}
+
+h2{
+    font-size:large;
+    margin-left:20px;
+}
+
+.commentsBox{
+    margin-left:0px;
+    font-size:medium;
+    padding:0px;
+    background-color:aliceblue;
+    border:1px solid black;
+    width: 70%;
+}
+
+.commentsPublish{
+    margin-left:0px;
+    font-size:medium;
+    padding:0px;
+    background-color:aliceblue;
+    padding: 20px;
+    border:1px solid black;
+
+    display:flex;
+}
+
+.writeComment{
+    background-color: aliceblue;
+    border:1px solid black;
+    width:70%;
+    margin:10px;
+}
+
+.publishButton{
+    padding: 20px;
+    background-color: cadetblue;
+    border: none;
+    font-size: medium;
+    border-radius: 5px;
+    align-self:flex-end;
+
+}
+
+.publishButton:hover{
+    font-weight: bolder;
+    background-color:rgb(237, 228, 63)
+}
+
+/* Dropdown menu */
+
+.dropDown{
+    margin-left: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.dropButton{
+    background-color: cadetblue;
+    padding: 10px;
+    font-size: medium;
+    border: none;
+}
+
+.dropLinks{
+    display:none;
+    position:absolute;
+}
+
+.dropLinks a{
+    display:block;
+}
+
+.dropDown:hover .dropLinks {display:block}
