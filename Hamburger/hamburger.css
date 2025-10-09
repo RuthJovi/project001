@@ -1,8 +1,13 @@
 *{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding:1vw;
+    padding:8px;
     margin:0;
 }
+
+:root{
+    --h2FontSize: 200%;
+}
+
 body{
     height:100%;
     margin:0;
@@ -57,12 +62,11 @@ h1{
     font-size:400%;
 }
 h2{
-    font-size:200%;
+    font-size:var(--h2FontSize);
 }
 h3{
-    
-}
 
+}
 
 .halfScreen{
     width:50%;
@@ -70,3 +74,12 @@ h3{
     margin-left: 5%;
     margin-right: 5%;
 }
+
+.menuButton{
+    width:300px;
+    height:100px;
+    margin:2%;
+    font-size:var(--h2FontSize);
+    border-radius:20%;
+}
+
