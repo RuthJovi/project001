@@ -1,0 +1,72 @@
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding:1vw;
+    margin:0;
+}
+body{
+    height:100%;
+    margin:0;
+    padding:0;
+}
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.horizontal{
+    display: flex;
+    flex-direction: row;  
+    justify-content: left;
+}
+.vertical{
+    display: flex;
+    flex-direction: column;  
+    justify-content: top;
+}
+.right{
+    justify-content: right;
+    width: 100%;
+}
+.center{
+    justify-content: center;
+}
+.between{
+    justify-content: space-between;
+}
+.left{
+    justify-content: left;
+    width: 100%;
+}
+.navbar{
+    flex-direction:row;
+    justify-content: center;
+}
+.backgroundpicture{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+#Address{
+    color:darkgray
+}
+
+/* h1 for NAME, h2 for titles, h3 for smaller titles */
+h1{
+    font-size:400%;
+}
+h2{
+    font-size:200%;
+}
+h3{
+    
+}
+
+
+.halfScreen{
+    width:50%;
+    height:auto;
+    margin-left: 5%;
+    margin-right: 5%;
+}
