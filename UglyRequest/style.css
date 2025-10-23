@@ -6,9 +6,10 @@ body{
 
 .header{
     background-color:cadetblue;
-    padding: 20px;
-    margin-left:20px;
-    margin-top:20px;
+    padding: 4%;
+    margin-left:5%;
+    margin-right: 5%;
+    margin-top:5%;
     color: black;
     font-size:xx-large;
 }
@@ -19,7 +20,7 @@ body{
 }
 
 h3{
-    margin-left:20px;
+
 }
 
 .card{
@@ -29,6 +30,7 @@ h3{
     background-color:aliceblue;
     border:1px solid black;
     width: 15%;
+    text-align:center;
 }
 
 .card:hover{
@@ -52,6 +54,11 @@ h2{
     background-color:aliceblue;
     border:1px solid black;
     width: 70%;
+}
+
+.commentText{
+    border: 1px solid black;
+    margin-left:10%;
 }
 
 .commentsPublish{
@@ -97,7 +104,8 @@ h2{
 
 .dropButton{
     background-color: cadetblue;
-    padding: 10px;
+    padding: 15%;
+    margin:10;
     font-size: medium;
     border: none;
 }
@@ -105,10 +113,34 @@ h2{
 .dropLinks{
     display:none;
     position:absolute;
+    background-color:beige;
+    color: black;
+    padding:10%;
 }
 
 .dropLinks a{
     display:block;
 }
 
+.dropLinks a:hover{background-color:cadetblue; color:aliceblue;}
 .dropDown:hover .dropLinks {display:block}
+.dropButton:hover{background-color: rgb(70, 116, 117)}
+
+
+@media (max-width: 800px){
+    .flex{
+        display:grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .card{
+    margin-left:5%;
+    margin-right:5%;
+    padding:0px;
+
+    font-size:medium;
+    background-color:aliceblue;
+    border:1px solid black;
+    width: 80%;
+}
+}
