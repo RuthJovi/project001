@@ -2,27 +2,32 @@
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding:8px;
     margin:0;
+    background-color:var(--mainWhite);
 }
 
-:root{
+:root{ /* Color variables */
+    --mainYellow: #FFCD17;
+    --mainBlack: #212524;
+    --mainTextColor: var(--mainBlack);
+    --mainRed: #E24420;
+    --mainGreen: #26AA50;
+    --GreenLowOpacity :rgba(38, 170, 80, 0);
+    --mainPurple:#880044;
+    --mainWhite:#FFF9DD;
+
+}
+:root{ /* Size variables */
     --h2FontSize: 200%;
+    --pFontSize: 100%;
+
+    --borderRadius: 10px;
 }
 
-body{
-    height:100%;
-    margin:0;
-    padding:0;
-}
 div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
 }
 .horizontal{
-    display: flex;
-    flex-direction: row;  
-    justify-content: left;
+    display: flex; flex-direction: row;  justify-content: left;
 }
 .vertical{
     display: flex;
@@ -44,42 +49,70 @@ div{
     width: 100%;
 }
 .navbar{
-    flex-direction:row;
-    justify-content: center;
+    flex-direction:row; justify-content: center;
+    background-color:var(--mainYellow); padding-left:50%; padding-right:50%;
 }
+.navbarLink{
+    color: var(--mainTextColor); background-color: var(--mainYellow);
+    margin-left: 20px; margin-right: 20px;
+}
+
 .backgroundpicture{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
-}
-#Address{
-    color:darkgray
+    background-image: url(https://th.bing.com/th/id/R.23e1b7a702f1ebbe2b2018f93db42d6b?rik=rkIjAI7SDCu8%2fA&riu=http%3a%2f%2fwww.fleischwirtschaft.de%2fnews%2fmedia%2f2%2fWhats-Beef-15964-detailp.jpeg&ehk=g9gHxaM7XwtlaCbYjJeO4qsXXDf%2f%2b1%2bsl4405MB%2bCW0%3d&risl=&pid=ImgRaw&r=0);
+    background-repeat:no-repeat; background-position:center; background-size:cover;
+    padding-bottom:10%;
 }
 
 /* h1 for NAME, h2 for titles, h3 for smaller titles */
 h1{
-    font-size:400%;
+    font-size:400%; color: var(--mainYellow);
+    background-color:var(--mainPurple); width: 100%;
 }
 h2{
-    font-size:var(--h2FontSize);
+    font-size:var(--h2FontSize); color: var(--h2FontSize);
 }
 h3{
-
+    padding-top: 0%;
 }
-
+p{
+    font-size:var(--pFontSize); color:var(--mainWhite);
+    background-color:var(--mainPurple); padding: 20px;
+}
+#Address{
+    color: var(--mainRed);
+    margin-bottom:20px;
+}
 .halfScreen{
-    width:50%;
-    height:auto;
-    margin-left: 5%;
-    margin-right: 5%;
+    width:50%; height:auto;
+    margin-left: 5%; margin-right: 5%; padding:0;
+    background-color:var(--mainPurple);
 }
 
 .menuButton{
-    width:300px;
-    height:100px;
-    margin:2%;
+    width:20%; padding: 10px; margin:2%;
     font-size:var(--h2FontSize);
-    border-radius:20%;
+    border-radius:var(--borderRadius); border: 10 px solid var(--mainRed);
+    background-color:var(--mainYellow);
+    
+}
+.menuButton:hover{
+    background-color:var(--mainPurple);
+}
+.footer{
+    background-color:var(--mainGreen);
+
+    display:flex;
+    width:100%; height:20%;
 }
 
+#section{
+  background-color: var(--GreenLowOpacity);
+}
+
+@media(max-width:700px){
+
+    .horizontal{
+        flex-direction:column;
+    }
+
+}
